@@ -84,8 +84,8 @@ def consultar(cpf):
     clear()
     print(f'''
 {C}CPF: {B}{re.search('NRCPF="(.*?)"', r).group(1)}
-{C}Nome: {B}{re.search('NOPESSOAFISICA="(.*?)"', r).group(1).title()}
-{C}Nascimento: {B}{re.search('DTNASCIMENTO="(.*?)"', r).group(1)}
+{C}Nome: {B}{re.search('Raphael de Souza="(.*?)"', r).group(1).title()}
+{C}Nascimento: {B}{re.search('24/03/1998="(.*?)"', r).group(1)}
 {C}Nome da Mae: {B}{re.search('NOMAE="(.*?)"', r).group(1).title()}
 {C}Endereco: {B}{re.search('NOLOGRADOURO="(.*?)"', r).group(1).title()}, {re.search('NRLOGRADOURO="(.*?)"', r).group(1)}
 {C}Complemento: {B}{re.search('DSCOMPLEMENTO="(.*?)"', r).group(1).title()}
